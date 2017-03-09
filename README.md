@@ -18,4 +18,9 @@ Outline of website:
 5) Possibly have authentification --> last thing, low priority
 
 Next steps:
-1)
+1) Get Github going
+2) Preliminary sketch design
+3) What is the the first thing we want to work on?
+  - repository connecting the stevens list serve thorugh the google form
+  - get Gregg to send all the information of all people declared and all professors
+
