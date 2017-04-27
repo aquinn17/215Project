@@ -35,18 +35,56 @@ h1 {letter-spacing: 6px}
 
 <!-- courses table -->
 
-<table>
-  <tr>
-      <center>
-    <p>Software Engineering Required Courses<font color="white">_______________________________</font> MyStevens Homepage <font color = "white"> ________</font> </p>
-      <a href="https://web.stevens.edu/catalog/pdf/Stevens_2016-2017_Academic-Catalog.pdf#page=414" class="w3-bar-item w3-button">
-          <img src="https://www.stevens.edu/sites/stevens_edu/files/files/banner_image_catalog_975x215_071516.jpg" alt="Catalog" style="width:375px;height:250px;border:0;" >
-      </a>
-      <a href="https://shibboleth.stevens.edu/idp/Authn/UserPassword" class="w3-bar-item w3-button">
-          <img src="http://weblisting-img.freetemplatespot.com/img/620x313/m/my.stevens.edu.png" alt="MyStevens" style="width:430px;height:250px;border:0;" >
-      </a>
-          </center>
 
+<div class="w3-content w3-display-container w3-padding-32">
+  <center>
+  <a href="https://web.stevens.edu/catalog/pdf/Stevens_2016-2017_Academic-Catalog.pdf#page=414" class="w3-bar-item w3-button">
+  <!--<div class="w3-display-centertop w3-container w3-padding-16"> <font color="#A9A9A9"> <strong>
+      Software Engineering Undergraduate Curriculum </strong>
+    </font>
+  </div>-->
+    <img class="mySlides" src="https://www.stevens.edu/sites/stevens_edu/files/files/banner_image_catalog_975x215_071516.jpg" style="width:100%">
+  </a>
+  <a href="https://shibboleth.stevens.edu/idp/Authn/UserPassword" class="w3-bar-item w3-button">
+    <!--<div class="w3-display-centertop w3-container w3-padding-16"> <font color="#A9A9A9"> <strong>
+        MyStevens Home Page </strong>
+      </font>
+    </div>-->
+    <img class="mySlides" src="http://weblisting-img.freetemplatespot.com/img/620x313/m/my.stevens.edu.png" style="width:100%"> </a>
+  </center>
+  <!-- <center>
+  <p font = Brandon Grotesque; size = 18> Software Engineering Required Courses<font color="white">_______________________________</font> MyStevens Homepage <font color = "white"> ________</font> </p>
+    <a href="https://web.stevens.edu/catalog/pdf/Stevens_2016-2017_Academic-Catalog.pdf#page=414" class="w3-bar-item w3-button">
+      <img src="https://www.stevens.edu/sites/stevens_edu/files/files/banner_image_catalog_975x215_071516.jpg" alt="Catalog" style="width:375px;height:250px;border:0;width:100%" >
+    </a>
+    <a href="https://shibboleth.stevens.edu/idp/Authn/UserPassword" class="w3-bar-item w3-button">
+      <img src="http://weblisting-img.freetemplatespot.com/img/620x313/m/my.stevens.edu.png" alt="MyStevens" style="width:430px;height:250px;border:0;width:100%" >
+    </a>
+</center> -->
+
+<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
 
 <!-- End Page Content -->
 </div>
